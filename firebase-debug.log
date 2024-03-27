@@ -1,0 +1,77 @@
+[debug] [2024-03-26T04:44:38.109Z] ----------------------------------------------------------------------
+[debug] [2024-03-26T04:44:38.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\21654\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-03-26T04:44:38.114Z] CLI Version:   13.5.2
+[debug] [2024-03-26T04:44:38.114Z] Platform:      win32
+[debug] [2024-03-26T04:44:38.115Z] Node Version:  v20.11.1
+[debug] [2024-03-26T04:44:38.115Z] Time:          Tue Mar 26 2024 05:44:38 GMT+0100 (Central European Standard Time)
+[debug] [2024-03-26T04:44:38.115Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-26T04:44:38.339Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-26T04:44:38.340Z] > authorizing via signed-in user (amira.matoussi@esprit.tn)
+[debug] [2024-03-26T04:44:38.340Z] [iam] checking project amira-matoussi for permissions ["firebase.projects.get"]
+[debug] [2024-03-26T04:44:38.343Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/amira-matoussi:testIamPermissions [none]
+[debug] [2024-03-26T04:44:38.343Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/amira-matoussi:testIamPermissions x-goog-quota-user=projects/amira-matoussi
+[debug] [2024-03-26T04:44:38.344Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/amira-matoussi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-26T04:44:39.298Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/amira-matoussi:testIamPermissions 200
+[debug] [2024-03-26T04:44:39.298Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/amira-matoussi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-26T04:44:39.300Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi [none]
+[debug] [2024-03-26T04:44:39.819Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi 200
+[debug] [2024-03-26T04:44:39.819Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi {"projectId":"amira-matoussi","projectNumber":"748300056159","displayName":"Amira-Matoussi","name":"projects/amira-matoussi","resources":{"hostingSite":"amira-matoussi","realtimeDatabaseInstance":"amira-matoussi-default-rtdb"},"state":"ACTIVE","etag":"1_3f701387-c5a7-4391-b858-c18befaf8c2f"}
+[info] 
+[info] === Serving from 'C:\Users\21654'...
+[info] 
+[debug] [2024-03-26T04:44:39.835Z] defaultcredentials: writing to file C:\Users\21654\AppData\Roaming\firebase\amira_matoussi_esprit.tn_application_default_credentials.json
+[debug] [2024-03-26T04:44:39.836Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/amira-matoussi/sites 
+[debug] [2024-03-26T04:44:39.842Z] Setting GAC to C:\Users\21654\AppData\Roaming\firebase\amira_matoussi_esprit.tn_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\21654\\AppData\\Roaming\\firebase\\amira_matoussi_esprit.tn_application_default_credentials.json"}}
+[debug] [2024-03-26T04:44:39.843Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi/adminSdkConfig [none]
+[debug] [2024-03-26T04:44:40.161Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi/adminSdkConfig 200
+[debug] [2024-03-26T04:44:40.161Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi/adminSdkConfig {"projectId":"amira-matoussi","databaseURL":"https://amira-matoussi-default-rtdb.firebaseio.com","storageBucket":"amira-matoussi.appspot.com"}
+[debug] [2024-03-26T04:44:41.131Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/amira-matoussi/sites 200
+[debug] [2024-03-26T04:44:41.131Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/amira-matoussi/sites {"sites":[{"name":"projects/amira-matoussi/sites/amira-matoussi","defaultUrl":"https://amira-matoussi.web.app","type":"DEFAULT_SITE"},{"name":"projects/amira-matoussi/sites/amiramatoussi","defaultUrl":"https://amiramatoussi.web.app","appId":"1:748300056159:web:46c2019474f4db2c0a8dea","type":"USER_SITE"}]}
+[debug] [2024-03-26T04:44:41.131Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi/webApps/-/config [none]
+[debug] [2024-03-26T04:44:41.990Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi/webApps/-/config 200
+[debug] [2024-03-26T04:44:41.990Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi/webApps/-/config {"projectId":"amira-matoussi","appId":"1:748300056159:web:46c2019474f4db2c0a8dea","databaseURL":"https://amira-matoussi-default-rtdb.firebaseio.com","storageBucket":"amira-matoussi.appspot.com","apiKey":"AIzaSyBWamsjfy__J2tR4Y74EBw__FkXYLU5f0A","authDomain":"amira-matoussi.firebaseapp.com","messagingSenderId":"748300056159","measurementId":"G-CHRB715DMB"}
+[debug] [2024-03-26T04:44:41.997Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi [none]
+[debug] [2024-03-26T04:44:42.351Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi 200
+[debug] [2024-03-26T04:44:42.351Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amira-matoussi {"projectId":"amira-matoussi","projectNumber":"748300056159","displayName":"Amira-Matoussi","name":"projects/amira-matoussi","resources":{"hostingSite":"amira-matoussi","realtimeDatabaseInstance":"amira-matoussi-default-rtdb"},"state":"ACTIVE","etag":"1_3f701387-c5a7-4391-b858-c18befaf8c2f"}
+[info] i  functions: Watching "C:\Users\21654\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\21654\\functions\" for Cloud Functions..."}}
+[info] i  hosting[amira-matoussi]: Serving hosting files from:  public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m public\u001b[22m"}}
+[info] +  hosting[amira-matoussi]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-03-26T04:44:42.400Z] Validating nodejs source
+[debug] [2024-03-26T04:44:46.849Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T04:44:46.849Z] Building nodejs source
+[debug] [2024-03-26T04:44:46.850Z] Failed to find version of module node: reached end of search path C:\Users\21654\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-03-26T04:44:46.855Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T04:44:46.871Z] Found firebase-functions binary at 'C:\Users\21654\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8564
+
+[debug] [2024-03-26T04:44:47.668Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  hosting: ::1 - - [26/Mar/2024:04:45:35 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Mar/2024:04:45:35 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0\""}}
+[info] i  hosting: ::1 - - [26/Mar/2024:04:45:35 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Mar/2024:04:45:35 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0\""}}
+[info] i  hosting: ::1 - - [26/Mar/2024:04:45:35 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Mar/2024:04:45:35 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0\""}}
+[info] i  hosting: ::1 - - [26/Mar/2024:04:47:16 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Mar/2024:04:47:16 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0\""}}
+[info] i  hosting: ::1 - - [26/Mar/2024:04:47:16 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Mar/2024:04:47:16 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0\""}}
